@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #C69774;
+    opacity: 0.8;
+    background-image: linear-gradient(30deg, #57330f 12%, transparent 12.5%, transparent 87%, #57330f 87.5%, #57330f), linear-gradient(150deg, #57330f 12%, transparent 12.5%, transparent 87%, #57330f 87.5%, #57330f), linear-gradient(30deg, #57330f 12%, transparent 12.5%, transparent 87%, #57330f 87.5%, #57330f), linear-gradient(150deg, #57330f 12%, transparent 12.5%, transparent 87%, #57330f 87.5%, #57330f), linear-gradient(60deg, #57330f77 25%, transparent 25.5%, transparent 75%, #57330f77 75%, #57330f77), linear-gradient(60deg, #57330f77 25%, transparent 25.5%, transparent 75%, #57330f77 75%, #57330f77);
+    background-size: 62px 109px;
+    background-position: 0 0, 0 0, 31px 54px, 31px 54px, 0 0, 31px 54px;
+}
+
+header {
+    background-color: #E0A75E;
+    color: #803a3a;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 25px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.calculator-container {
+    background-color: #BA704F;
+    border-radius: 40%;
+    box-shadow: 0 0 20px rgba(72, 45, 7, 0.9);
+    padding: 40px;
+    text-align: center;
+    width: 500px;
+    height: 260px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(37, 33, 18);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.buttons button:hover {
+    background: rgb(125, 84, 14);
+    box-shadow: 0 0 30px 5px rgba(255, 193, 80, 0.815);
+}
+
+button {
+    padding: 15px;
+    flex-grow: 6;
+    margin: 0 4px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button#convertButton {
+    background-color: #E48F45;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font: bold;
+}
+
+button#resetButton {
+    background-color: #6B240C;
+    color: white;
+    font-size: medium;
+}
+
+button#reverseButton {
+    background-color: #994D1C;
+    color: rgb(255, 255, 255);
+    font: bold;
+    font-size: medium;
+}
+
+output {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+aside {
+    margin-top: 20px;
+    margin-left: 100px;
+    font-size: 16px;
+    color: #5a0000;
+    max-width: 300px;
+    text-align: center;
+    align-self: center;
+}

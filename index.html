@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Situs Web Suhu Konversi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+<body>
+    <header>
+        <h1>Situs Web Suhu Konversi</h1>
+        <h2>"Celcius to Farenheit"</h2>
+        
+    </header>
+    <main>
+        
+        <section class="calculator-container">
+            <form id="temperatureForm">
+                <label for="temperature">Masukkan Suhu (°C):</label>
+                <input type="number" id="temperature" name="temperature" required>
+                <section class="buttons">
+                    <button type="button" id="convertButton">Konversi</button>
+                    <button type="button" id="resetButton">Reset</button>
+                    <button type="button" id="reverseButton">Reverse</button>
+                </section>
+                <output id="result"></output>
+            </form>
+            <aside id="explanation"></aside>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
